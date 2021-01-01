@@ -1,3 +1,0 @@
-C:\Users\Dima\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7660.37\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\vlad_test.dir/objects.a
-C:\MinGW\mingw64\bin\ar.exe cr CMakeFiles\vlad_test.dir/objects.a @CMakeFiles\vlad_test.dir\objects1.rsp
-C:\MinGW\mingw64\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\vlad_test.dir/objects.a -Wl,--no-whole-archive  -o vlad_test.exe -Wl,--out-implib,libvlad_test.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\vlad_test.dir\linklibs.rsp

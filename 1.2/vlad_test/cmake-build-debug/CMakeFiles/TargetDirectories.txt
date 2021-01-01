@@ -1,3 +1,0 @@
-C:/C lang/1.2/vlad_test/cmake-build-debug/CMakeFiles/vlad_test.dir
-C:/C lang/1.2/vlad_test/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/C lang/1.2/vlad_test/cmake-build-debug/CMakeFiles/rebuild_cache.dir
