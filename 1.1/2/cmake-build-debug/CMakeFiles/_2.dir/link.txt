@@ -1,3 +1,0 @@
-C:\Users\Dima\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\_2.dir/objects.a
-C:\MinGW\mingw64\bin\ar.exe cr CMakeFiles\_2.dir/objects.a @CMakeFiles\_2.dir\objects1.rsp
-C:\MinGW\mingw64\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\_2.dir/objects.a -Wl,--no-whole-archive  -o _2.exe -Wl,--out-implib,lib_2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\_2.dir\linklibs.rsp
