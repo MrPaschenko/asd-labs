@@ -4,7 +4,7 @@
 //Создаём прототип функции окна, которая будет определена ниже
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 
-void arrow(double fi, double px, double py);
+// void arrow(double fi, double px, double py);
 
 //объявляем строку-имя программы
 char ProgName[] = "Lab_3_Pashchenko_IP-04";
@@ -33,6 +33,9 @@ int WINAPI WinMain(HINSTANCE hInstance,
     if (!RegisterClass(&w))
         return 0;
 
+    //HWND hWnd;
+    //MSG lpMsg;
+
     //Создадим окно в памяти, заполнив аргументы CreateWindow
     hWnd = CreateWindow(ProgName, //Имя программы
                         "Lab_3_Pashchenko_IP-04", //Заголовок окна
@@ -50,7 +53,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
     ShowWindow(hWnd, nCmdShow);
 
     //Обновим содержимое окна
-    UpdateWindow(hWnd);
+    //UpdateWindow(hWnd);
 
     //Цикл одержання повідомлень
     while (GetMessage(&lpMsg, hWnd, 0, 0))
@@ -71,7 +74,7 @@ LRESULT CALLBACK WndProc(HWND hWnd,
     HDC hdc; //создаём контекст устройства
     PAINTSTRUCT ps; //создаём экземпляр структуры графического вывода
 
-    void arrow(double fi, double px, double py)
+    void arrow(float fi, int px, int py)
     {
         fi = 3.1416 * (180.0 - fi) / 180.0;
         int lx, ly, rx, ry; //px, py,
@@ -84,6 +87,7 @@ LRESULT CALLBACK WndProc(HWND hWnd,
         MoveToEx(hdc, lx, ly, NULL);
         LineTo(hdc, px, py);
         LineTo(hdc, rx, ry);
+        //return 0;
     }
 
     //Цикл обработки сообщений
@@ -104,7 +108,7 @@ LRESULT CALLBACK WndProc(HWND hWnd,
             MoveToEx(hdc, nx[0], ny[0], NULL); //сделать текущими координаты x1, y1
             LineTo(hdc, nx[1], ny[1]);
 
-            arrow(0, nx[1]-dx, ny[1]);
+            arrow(0, nx[1] - dx, ny[1]);
 
             //BOOL Arc(HDC hdc, int xLeft, int yTop, int xRight, int yBottom,
             //int xStart, int yStart, int xEnd, int yEnd);
