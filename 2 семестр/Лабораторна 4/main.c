@@ -640,8 +640,7 @@ LRESULT CALLBACK WndProc(HWND hWnd,
 
             }
 
-            /////////////////////////ДЕЙСТВИЯ \\\\\\\\\\\\\\\\\\\\\\\\
-    printf("Directed graph:\n");
+            printf("Directed graph:\n");
             printGrapgMatrix(A);
             printf("Undirected graph:\n");
             printGrapgMatrix(B);
